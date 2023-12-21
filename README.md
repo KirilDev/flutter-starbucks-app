@@ -1,16 +1,6 @@
 # starbucks_coffee
-
 A new Flutter project.
 
-## Getting Started
+## I have created an application that copy design from Starbucks on behance.net
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[Link to behance design]("https://www.behance.net/gallery/120418723/Starbucks?tracking_source=search_projects&l=4&")
