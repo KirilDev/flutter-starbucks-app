@@ -1,33 +1,142 @@
-# Gradle files
-.gradle/
-build/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
+# Miscellaneous
+*.class
 *.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output.json
-
-# IntelliJ
+# IntelliJ related
 *.iml
+*.ipr
+*.iws
 .idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
 
-# Keystore files
-*.jks
-*.keystore
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
 
-# Android Profiling
-*.hprof
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+web/index.html
+web/manifest.json
+windows/flutter/generated_plugins.cmake
+windows/runner/CMakeLists.txt
+windows/runner/flutter_window.cpp
+windows/runner/flutter_window.h
+windows/runner/main.cpp
+windows/runner/resource.h
+windows/runner/resources/app_icon.ico
+windows/runner/runner.exe.manifest
+windows/runner/Runner.rc
+windows/runner/utils.cpp
+windows/runner/utils.h
+windows/runner/win32_window.cpp
+windows/runner/win32_window.h
+test/widget_test.dart
+web/favicon.png
+web/icons/Icon-192.png
+web/icons/Icon-512.png
+web/icons/Icon-maskable-192.png
+web/icons/Icon-maskable-512.png
+windows/CMakeLists.txt
+windows/flutter/CMakeLists.txt
+windows/flutter/generated_plugin_registrant.cc
+windows/flutter/generated_plugin_registrant.h
+macos/RunnerTests/RunnerTests.swift
+macos/Runner/Release.entitlements
+macos/Runner/MainFlutterWindow.swift
+macos/Runner/Info.plist
+macos/Runner/DebugProfile.entitlements
+macos/Runner/Configs/Warnings.xcconfig
+macos/Runner/Configs/Release.xcconfig
+macos/Runner/Configs/Debug.xcconfig
+macos/Runner/Configs/AppInfo.xcconfig
+macos/Runner/Base.lproj/MainMenu.xib
+macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png
+macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png
+macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png
+macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png
+macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png
+macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png
+macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png
+macos/Runner/AppDelegate.swift
+macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+macos/Runner.xcworkspace/contents.xcworkspacedata
+macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+macos/Runner.xcodeproj/project.pbxproj
+macos/Flutter/GeneratedPluginRegistrant.swift
+macos/Flutter/Flutter-Release.xcconfig
+macos/Flutter/Flutter-Debug.xcconfig
+linux/my_application.h
+linux/my_application.cc
+linux/main.cc
+linux/flutter/generated_plugins.cmake
+linux/flutter/generated_plugin_registrant.h
+linux/flutter/generated_plugin_registrant.cc
+linux/flutter/CMakeLists.txt
+linux/CMakeLists.txt
+ios/RunnerTests/RunnerTests.swift
+ios/Runner/Runner-Bridging-Header.h
+ios/Runner/Info.plist
+ios/Runner/Base.lproj/Main.storyboard
+ios/Runner/Base.lproj/LaunchScreen.storyboard
+ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md
+ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png
+ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png
+ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png
+ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+ios/Runner/AppDelegate.swift
+ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ios/Runner.xcworkspace/contents.xcworkspacedata
+ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ios/Runner.xcodeproj/project.pbxproj
+ios/Flutter/Release.xcconfig
+ios/Flutter/Debug.xcconfig
+ios/Flutter/AppFrameworkInfo.plist
