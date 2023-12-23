@@ -7,8 +7,8 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePageScreen(),
+    return MaterialApp(
+      home: LoginScreen(),
     );
   }
 }
@@ -49,7 +49,7 @@ class LoginScreen extends StatelessWidget {
             ElevatedButton.icon(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => HomePageScreen()));
+                    MaterialPageRoute(builder: (context) => AuthScreen()));
               },
               icon: const Icon(Icons.email),
               label: const Text('Login With Email'),
@@ -107,27 +107,27 @@ The second screen
 ApplicationBar is a custom created appBar that contains two texts and two icons
 */
 
-
-
-
 Widget MyOwnNavigationBar = Container(
   padding: EdgeInsets.all(20),
   child: const Row(
     children: [
       Column(
         children: [
-          Text("Good Morning", style: TextStyle(fontSize: 15),),
-          Text("User", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)
+          Text(
+            "Good Morning",
+            style: TextStyle(fontSize: 15),
+          ),
+          Text(
+            "User",
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          )
         ],
       ),
       Spacer(),
       Column(
         children: [
           Row(
-            children: [
-              Icon(Icons.shopping_bag),
-              Icon(Icons.list)
-            ],
+            children: [Icon(Icons.shopping_bag), Icon(Icons.list)],
           ),
         ],
       )
@@ -135,9 +135,9 @@ Widget MyOwnNavigationBar = Container(
   ),
 );
 
-
 class HomePageScreen extends StatelessWidget {
   const HomePageScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     Widget SearchBar = Container(
@@ -150,14 +150,17 @@ class HomePageScreen extends StatelessWidget {
           width: MediaQuery.of(context).size.width - 50,
           height: 50,
           child: const Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-               children: [
-                    Text("|", style: TextStyle(color: Colors.green, fontSize: 20),),
-                    SizedBox(width: 5),
-                    Text("Seach beverages of foods"),
-                    SizedBox(width: 100),
-                    Icon(Icons.search),
-                  ],
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "|",
+                style: TextStyle(color: Colors.green, fontSize: 20),
+              ),
+              SizedBox(width: 5),
+              Text("Seach beverages of foods"),
+              SizedBox(width: 100),
+              Icon(Icons.search),
+            ],
           ),
         ),
       ),
@@ -167,12 +170,80 @@ class HomePageScreen extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: SafeArea(
-            child: Column(
-          children: [
-            MyOwnNavigationBar,
-            SearchBar
-          ],
+          child: Column(
+            children: [MyOwnNavigationBar, SearchBar],
+          ),
         ),
+      ),
+    );
+  }
+}
+
+/*
+* Code for Auth Screen
+*
+* */
+
+ Widget AuthHeaderText = Container(
+  padding: const EdgeInsets.only(left: 15, top: 15),
+  child: const
+  Column(
+    children: [
+          Align(
+            alignment: Alignment.topLeft,
+            child:
+            Text("Sign In", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Align(
+            alignment: Alignment.topLeft,
+            child:
+            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"),
+          )
+        ],
+      ),
+);
+
+
+class AuthScreen extends StatelessWidget {
+  const AuthScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+
+    Widget AuthBox = Container(
+      child: Column(
+        children: [
+        //TODO("FINISH THIS FUCKING SHIT")
+
+          ElevatedButton.icon( onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => HomePageScreen()));
+          },
+              icon: Icon(Icons.login), label: Text("PROVIDE ME TO HOMESCREEN"))
+        ],
+      ),
+    );
+
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Center(
+              child: Text(
+            "STARBUCKS",
+            style: TextStyle(color: Color(0xff0A6442)),
+          )),
+          backgroundColor: Colors.white,
+          elevation: 0,
+        ),
+        body: Column(
+          children: [
+            AuthHeaderText,
+            AuthBox
+          ],
         ),
       ),
     );
