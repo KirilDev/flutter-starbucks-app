@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
 //Need to explore
 
 /*
-First (or Login) Screen
-*/
+* Login Screen Code Start
+* */
 class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -100,13 +100,15 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
+/*
+* Login Screen END
+* */
+
+
 
 /*
-The second screen
-
-ApplicationBar is a custom created appBar that contains two texts and two icons
-*/
-
+* Main Screen START
+* */
 Widget MyOwnNavigationBar = Container(
   padding: EdgeInsets.all(20),
   child: const Row(
